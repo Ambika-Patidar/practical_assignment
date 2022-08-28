@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :users, only: :index
 
+  resources :home, only: :index
   # Defines the root path route ("/")
-  root 'users/sessions#new'
+  root 'home#index'
 end
