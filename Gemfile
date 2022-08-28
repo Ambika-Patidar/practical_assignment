@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+gem 'bootstrap', '~> 5.2.0'
+
 gem 'devise'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -28,6 +30,8 @@ gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
+
+gem 'jquery-rails'
 
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
