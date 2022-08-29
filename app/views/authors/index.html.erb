@@ -1,0 +1,18 @@
+<p style='color: green'><%= notice %></p>
+
+<h1>Authors</h1>
+<%= link_to 'New author', new_author_path, class: 'float-right' %>
+
+<div id='authors'>
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+    </tr>
+    <% @authors.each do |author| %>
+      <tr>
+        <td><%= render author %></td>
+      </tr>
+    <% end %>
+    </table>
+</div>
+
