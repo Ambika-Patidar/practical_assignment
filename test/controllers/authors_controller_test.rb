@@ -6,20 +6,20 @@ class AuthorsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should get index' do
-    get authors_url
+    get authors_path
     assert_response :success
   end
 
   test 'should get new' do
-    get new_author_url
+    get new_author_path
     assert_response :success
   end
 
   test 'should create author' do
     assert_difference('Author.count') do
-      post authors_url, params: { author: { name: 'test'} }
+      post authors_path, params: { author: { name: 'test'} }
     end
 
-    assert_redirected_to author_url(Author.last)
+    assert_redirected_to authors_path
   end
 end
