@@ -11,6 +11,5 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
-Create admin user from the seed files
+*Create admin user from the seed files
 
