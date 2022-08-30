@@ -24,6 +24,10 @@ class BooksController < ApplicationController
     end
   end
 
+  def reports
+    @book = Book.find_by(id: Favorite.select(:book_id).group(:book_id).max.book_id)
+  end
+
   private
 
   # Only allow a list of trusted parameters through.

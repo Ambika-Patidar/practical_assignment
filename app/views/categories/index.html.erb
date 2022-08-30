@@ -7,7 +7,7 @@
     <tr>
       <th>Name</th>
     </tr>
-    <% @categories.each do |category| %>
+    <% @categories&.each do |category| %>
       <tr>
         <td><%= render category %></td>
       </tr>

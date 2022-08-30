@@ -8,7 +8,7 @@
     <tr>
       <th>Name</th>
     </tr>
-    <% @authors.each do |author| %>
+    <% @authors&.each do |author| %>
       <tr>
         <td><%= render author %></td>
       </tr>
