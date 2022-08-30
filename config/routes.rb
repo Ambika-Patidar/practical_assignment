@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :users, only: :index
   resources :authors, only: %i[new index create]
 
+  mount API::Base, at: '/api'
   # Defines the root path route ("/")
   root 'home#index'
 end
